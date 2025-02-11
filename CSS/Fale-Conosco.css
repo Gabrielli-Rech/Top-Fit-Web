@@ -1,0 +1,99 @@
+.search-bar button {
+    margin-top: -4.5%;
+}
+/* Formulário */
+form {
+    background: linear-gradient(to top ,#0cc0df , #ff6300);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 500px;
+    height: auto;
+    
+}
+
+th, td {
+    padding: 10px;
+    vertical-align: top;
+    
+}
+
+label, h3 {
+    color: #ddd;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 25%;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a2a2a2;
+    color: #000000;
+    border: 2px solid transparent;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #0cc0df;
+    box-shadow: 0 0 10px #0cc0df;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #ff6300;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-left: 7%;
+}
+
+label {
+    display: inline-flex; /* Exibe o input e o texto na mesma linha */
+    align-items: center; /* Alinha verticalmente o texto com o botão de rádio */
+    gap: 5px; /* Adiciona espaço entre o botão e o texto */
+    margin-right: 0px; /* Adiciona espaçamento entre os rótulos */
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #0cc0df;
+    transform: scale(1.05);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+#centraliza {
+    background: linear-gradient(to top ,#0cc0df , #ff6300);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+    margin-left: 28%;
+}

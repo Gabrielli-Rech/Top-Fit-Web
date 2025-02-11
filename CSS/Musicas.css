@@ -1,0 +1,161 @@
+.container {
+    padding: 20px;
+}
+
+.song {
+    background-color: #1c1c1c;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.song:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.song img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.song-info {
+    flex-grow: 1;
+}
+
+.song-info h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.song-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.play-button {
+    background-color: #0cc0df;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #ff6300;
+}
+
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+/* Estilos para os botões de navegação */
+.controls button {
+    background-color: #0cc0df;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeitos de hover para os botões de navegação */
+.controls button:hover {
+    background-color: #ff6300;
+    transform: scale(1.1);
+}
+
+/* Estilos para o botão de reprodução */
+.play-button {
+    background-color: #ff6300;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transform: scale(0.98);
+}
+
+/* Efeitos de hover para o botão de reprodução */
+.play-button:hover {
+    background-color: #0cc0df;
+    transform: scale(1.1);
+}
+
+/* Estilos para os botões de navegação (Anterior e Próxima) */
+.controls button:focus {
+    outline: none;
+}
+
+.player-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.player-buttons {
+    margin-top: 10px;
+}
+
+.controls button:active {
+    transform: scale(0.98);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .controls button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .play-button {
+        font-size: 16px;
+        padding: 8px 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+footer {
+    background: linear-gradient(to right ,#0cc0df , #ff6300);
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer a:hover img {
+    opacity: 0.7;
+}

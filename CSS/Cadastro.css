@@ -1,0 +1,195 @@
+/* Configurações globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background: linear-gradient(to bottom , #0cc0df , #ff6300);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #000000;
+    padding-bottom: 5px;
+}
+
+/* Formulários */
+label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    color: #ddd;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+input,
+select,
+textarea {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 2px solid transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0cc0df;
+    box-shadow: 0 0 10px #0cc0df;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+/* Botões */
+button[type="submit"] {
+    background: linear-gradient(135deg, #0cc0df, #4682b4);
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(12, 192, 223, 0.8);
+}
+
+button[type="submit"]:hover {
+    background: #ff6300;
+    box-shadow: 0 6px 20px rgba(255, 99, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/* Botão Voltar */
+.back-button {
+    background: transparent;
+    border: 2px solid #ff6300;
+    color: #ff6300;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.back-button:hover {
+    background-color: #ff6300;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+/* Aviso de conta */
+.account-warning {
+    margin-top: 10px;
+    color: #888;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.account-warning a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.account-warning a:hover {
+    text-decoration: underline;
+}
+
+/* Seleção de tipos */
+.type-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.type-selection label {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ff6300;
+}
+
+.type-selection input[type="radio"] {
+    display: none;
+}
+
+.type-selection label:hover {
+    text-decoration: underline;
+}
+
+/* Oculto */
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #777;
+    text-align: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

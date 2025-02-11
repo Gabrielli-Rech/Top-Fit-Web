@@ -1,0 +1,389 @@
+/* Estilo para fundo e cores principais */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Aplica box-sizing a todos os elementos */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to left ,#0cc0df , #ff6300);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10%;
+}
+
+
+.navbar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ff6300; /* Laranja */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.close {
+    position: absolute;
+    top: 20px; /* Alinha o X no topo */
+    right: 20px; /* Alinha o X à direita */
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 7%;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #0cc0df;
+    border-radius: 5px;
+    outline: none;
+    color: #000000;
+}
+
+.search-bar button {
+    background-color: #0cc0df;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons-h{
+    /*margin-right: 40px;*/
+    justify-content:left;
+    display: flex;
+    flex-direction: row;
+    
+}
+.spacea{
+    margin: 5px;
+}
+
+.entrar{
+    background-color: #0cc0df;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to bottom ,#0cc0df , #ff6300);
+    color: #ffffff;
+    transition: left 0.5s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .close-btn {
+    padding: 10px;
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 30px;
+    
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.sidebar ul li a:hover {
+    background-color: #ff7f00;
+}
+/* Estilo do pop-up */
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup.active {
+    display: flex; /* Torna o pop-up visível */
+}
+
+.popup-content {
+    background: linear-gradient(to bottom, #0cc0df , #ff6300);
+    padding: 30px;
+    border-radius: 30px;
+    width: 300px;
+    color: #000000;
+    text-align: center;
+    
+}
+
+.popup .close {
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.popup button {
+    background-color: #0cc0df;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #ff6300;
+}
+
+/* Banner */
+.banner img {
+    
+    display: block;
+    margin: 30px;
+    height: 340px;
+    width: 1435px;
+    
+}
+
+/* Ajuste para imagens de Horários e Locais */
+.img-home {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px 0;
+}
+
+.img-home img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para o carrossel */
+.carousel-track-container {
+    width: 100%; /* Garante que o carrossel ocupe toda a largura disponível */
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 1s ease; /* Suaviza a transição entre as imagens */
+}
+
+.carousel-slide {
+    min-width: 60%; /* Cada slide ocupará 1/3 da largura do container */
+    box-sizing: border-box; /* Para garantir que o preenchimento e a borda não afetem o tamanho */
+    flex: 0 0 auto; /* Impede que os slides se encolham ou estiquem */
+}
+
+.carousel-slide img {
+    width: 850px; /* Faz com que as imagens se ajustem ao tamanho do slide */
+    height: 500px; /* Mantém a proporção das imagens */
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    background: linear-gradient(to top, #0cc0df , #ff6300);
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+}
+.dropdown.ativo {
+    display: block;
+}
+
+#carrinho-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#carrinho-lista li {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#carrinho-lista li:last-child {
+    border-bottom: none;
+}
+
+.bi-cart2.ativo {
+    color: #ff6300;
+}
+
+#finalizar-compra {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#finalizar-compra:hover {
+    background: rgb(169, 96, 6);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right ,#0cc0df , #ff6300);
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer a:hover img {
+    opacity: 0.7;
+}
+
+/* Sobre nós */
+.sobre-nos {
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.sobre-nos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sobre-nos p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Fale conosco */
+
+/* Título principal */
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    background: linear-gradient(to top ,#0cc0df , #ff6300);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+}
+

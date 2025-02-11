@@ -1,0 +1,46 @@
+.container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.playlist-card {
+    background: linear-gradient(to left ,#0cc0df , #ff6300);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.playlist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.playlist-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.playlist-card h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.playlist-card p {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+}
