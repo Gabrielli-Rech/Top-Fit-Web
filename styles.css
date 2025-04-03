@@ -16,7 +16,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: linear-gradient(to left ,#0cc0df , #ff6300);
+    background: linear-gradient(to right ,#0cc0df , #ff6300);
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -48,7 +48,7 @@ header h1 {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #ff6300; /* Laranja */
+    background: linear-gradient(to top ,#0cc0df , #ff6300);
     text-align: center;
     padding: 10px 0;
 }
@@ -131,7 +131,7 @@ header h1 {
     left: -250px;
     width: 250px;
     height: 100%;
-    background: linear-gradient(to bottom ,#0cc0df , #ff6300);
+    background: linear-gradient(to bottom ,#002CDB, #6200DB);
     color: #ffffff;
     transition: left 0.5s ease;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
@@ -186,7 +186,7 @@ header h1 {
 }
 
 .popup-content {
-    background: linear-gradient(to bottom, #0cc0df , #ff6300);
+    background: linear-gradient(to bottom, #002CDB, #6200DB);
     padding: 30px;
     border-radius: 30px;
     width: 300px;
@@ -220,7 +220,7 @@ header h1 {
 }
 
 .popup button:hover {
-    background-color: #ff6300;
+    background-color: #6200DB;
 }
 
 /* Banner */
@@ -277,7 +277,7 @@ header h1 {
     position: absolute;
     right: 10px;
     top: 40px;
-    background: linear-gradient(to top, #0cc0df , #ff6300);
+    background: #6200DB;
     border: 1px solid #ccc;
     padding: 10px;
     width: 220px;
@@ -306,7 +306,7 @@ header h1 {
 }
 
 .bi-cart2.ativo {
-    color: #ff6300;
+    color: #6200DB;
 }
 
 #finalizar-compra {
@@ -327,7 +327,7 @@ header h1 {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right ,#0cc0df , #ff6300);
+    background: #6200DB;
     padding: 20px;
     text-align: center;
     bottom: 0;
@@ -379,7 +379,7 @@ h1 {
 }
 
 form {
-    background: linear-gradient(to top ,#0cc0df , #ff6300);
+    background: #6200DB;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
